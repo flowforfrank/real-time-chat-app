@@ -1,0 +1,193 @@
+::placeholder {
+    font-style: italic;
+}
+
+html {
+    background: #252535;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 30px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 72px;
+    text-align: center;
+    color: #FFF;
+    margin: 0;
+}
+
+time {
+    font-size: 90%;
+}
+
+p {
+    margin: 10px 0 0;
+}
+
+hr {
+    border: 0;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+hr:after {
+    content: '...';
+    font-size: 38px;
+    letter-spacing: 8px;
+    font-weight: bold;
+}
+
+.messaging-form {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: calc(100% - 60px);
+    display: flex;
+}
+
+.message-input {
+    position: relative;
+    width: 90%;
+    padding: 2px;
+    border-radius: 40px;
+    margin-right: 20px;
+    background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,0) 95%);
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,0) 95%);
+    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 80%,rgba(255,255,255,0) 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+}
+
+.avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: block;
+}
+
+.message-input .avatar {
+    position: absolute;
+    left: 8px;
+    top: 49%;
+    transform: translateY(-50%);
+    background: #FFF;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.message-input-field {
+    border-radius: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 12px 12px 42px;
+    border: 0;
+    background: #252535;
+    color: #FFF;
+    outline: none;
+}
+
+.message-input.error {
+    background: red;
+}
+
+.messaging-form .message-input-field:focus {
+    background:#252535f0;
+}
+
+.join {
+    background: #5BCC8B;
+    border: 0;
+    color: #252535;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 5px 8px 0px #212121;
+}
+
+.welcome-message {
+    text-align: center;
+    color: #5BCC8B;
+    margin: 40px 0;
+}
+
+.welcome-message-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.welcome-message-text .avatar {
+    margin-right: 10px;
+}
+
+.welcome-message-text .user-name {
+    color: #E6BB46;
+    margin-right: 10px;
+}
+
+.feedback {
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    color: #FFF;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.feedback i {
+    color: #E6BB46;
+}
+
+.message-entry {
+    max-width: 350px;
+    display: flex;
+}
+
+.message-entry .avatar {
+    margin-right: 20px;
+}
+
+.message-body {
+    color: #FFF;
+}
+
+.user-name {
+    color: #E6BB46;
+    font-weight: bold;
+}
+
+.message-entry-own {
+    max-width: initial;
+    flex-direction: row-reverse;
+}
+
+.message-entry-own .avatar {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.message-entry-own .message-body {
+    text-align: right;
+}
+
+.message-entry-own .user-name {
+    color: #5BCC8B;
+}
