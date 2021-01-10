@@ -55,9 +55,12 @@ hr:after {
 
 .messaging-form {
     position: fixed;
-    bottom: 30px;
-    left: 30px;
-    width: calc(100% - 60px);
+    left: 0;
+    bottom: 0;
+    padding: 25px 20px;
+    background: #252535;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
 }
 
